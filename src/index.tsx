@@ -7,9 +7,8 @@ const HelloWorld: FC = () => {
     <svg
       id="color"
       enable-background="new 0 0 24 24"
-      height="512"
       viewBox="0 0 24 24"
-      width="512"
+
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

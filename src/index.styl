@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 body
+    margin: 0px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
     #root
         position: absolute
-        top: 0
-        left: 0
+        top: 0px
+        left: 0px
         width: 100%
         height: 100%
-        margin: 0
+        margin: 0px
         display: flex
         flex-direction: column
         align-content: center
         justify-content: center
         background: white
+
+  
 
 
 .content
@@ -22,6 +30,8 @@ body
     flex-direction: column
     align-items: center
     background: #fbdada
+    width: 100%
+    text-align: center
     h1
         font-family: 'Merriweather', serif
 
@@ -32,8 +42,28 @@ body
         transform: scale(1.2)
 
 svg
+    width: calc(50vw - 100px)
+    height: calc(50vw - 100px)
     path
         transform-origin: center
         fill: red
     animation: popup 1s ease alternate infinite
     
+
+@media only screen and (max-width: 800px)
+    svg
+        width: calc(70vw - 100px)
+        height: calc(70vw - 100px)
+        path
+            transform-origin: center
+            fill: red
+        animation: popup 1s ease alternate infinite
+
+@media only screen and (max-width: 500px)
+    svg
+        width: calc(90vw - 100px)
+        height: calc(90vw - 100px)
+        path
+            transform-origin: center
+            fill: red
+        animation: popup 1s ease alternate infinite
